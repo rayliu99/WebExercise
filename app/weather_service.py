@@ -122,3 +122,4 @@ if __name__ == "__main__":
 
     for forecast in result["hourly_forecasts"]:
         print(forecast["timestamp"], "|", forecast["temp"], "|", forecast["conditions"])
+
