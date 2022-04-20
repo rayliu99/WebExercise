@@ -1,3 +1,3 @@
 # this is the Procfile (a Heroku config file)
 
-web: gunicorn "WebApp:create_app()"
+web: gunicorn "web_app:create_app()"
