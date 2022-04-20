@@ -1,6 +1,7 @@
 # web_app/routes/weather_routes.py
 
 from flask import Blueprint, request, jsonify, render_template, redirect, flash # FYI new imports
+
 from app.weather_service import get_hourly_forecasts
 
 weather_routes = Blueprint("weather_routes", __name__)
