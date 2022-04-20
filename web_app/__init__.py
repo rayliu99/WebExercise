@@ -1,3 +1,4 @@
+
 # web_app/__init__.py
 
 from flask import Flask
@@ -9,8 +10,8 @@ from web_app.routes.weather_routes import weather_routes
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(home_routes)
-    #app.register_blueprint(book_routes)
-    #app.register_blueprint(weather_routes)
+    app.register_blueprint(book_routes)
+    app.register_blueprint(weather_routes)
     return app
 
 if __name__ == "__main__":
