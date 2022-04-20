@@ -16,3 +16,8 @@ def about():
     print("ABOUT...")
     return "About Me"
     #return render_template("about.html")
+    
+@home_routes.route("/another")
+def another():
+    print("ANOTHER PAGE MAYBE...")
+    return "Here is another page"
