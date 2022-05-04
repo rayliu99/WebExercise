@@ -2,6 +2,7 @@
 
 {% block content %}
 
+
     <!DOCTYPE html>
     <html class="no-js" lang="en">
     <head>
@@ -28,59 +29,66 @@
 
     <h1>What Type of Pokemon Are You?</h1>
 
-    <p>
-    <label>1. What is your favorite color?</label>
-    <pre>
-    <input type="Radio" Name="Color" Value="A">Green
-    <input type="Radio" Name="Color" Value="B">Red
-    <input type="Radio" Name="Color" Value="C">Blue
-    <input type="Radio" Name="Color" Value="D">Yellow
-    </pre>
-    </p>
-
-    <p>
-    <label>2. How would your friends describe you?</label>
-    <pre>
-    <input type="Radio" Name="Personality" Value="A">Brave
-    <input type="Radio" Name="Personality" Value="B">Aggressive
-    <input type="Radio" Name="Personality" Value="C">Weird
-    <input type="Radio" Name="Personality" Value="D">Cool
-    </pre>
-    </p>
-
-    <p>
-    <label>3. What is more enjoyable: being a child, teenager, or adult?</label>
-    <pre>
-    <input type="Radio" Name="age" Value="A">Adult
-    <input type="Radio" Name="age" Value="B">Teenager
-    <input type="Radio" Name="age" Value="C">Child
-    <input type="Radio" Name="age" Value="D">Elder
-    </pre>
-    </p>
-
-    <p>
-    <label>4. What is your favorite season of the year?</label>
-    <pre>
-    <input type="Radio" Name="season" Value="A">Spring
-    <input type="Radio" Name="season" Value="B">Summer
-    <input type="Radio" Name="season" Value="C">Fall
-    <input type="Radio" Name="season" Value="D">Winter
-    </pre>
-    </p>
-
-    <p>
-    <label>5. What makes you special?</label>
-    <pre>
-    <input type="Radio" Name="special" Value="A">Outgoing
-    <input type="Radio" Name="special" Value="B">Cuteness
-    <input type="Radio" Name="special" Value="C">Personable
-    <input type="Radio" Name="special" Value="D">Confident
-    </pre>
-    </p>
+    <form action="/summary" method="POST">
 
 
-    <br></br><br></br>
-    <button class="button buttonsummon">Summon!</button>
+        <p>
+        <label>1. What is your favorite color?</label>
+        <pre>
+        <input type="Radio" Name="Color" Value="A">Green
+        <input type="Radio" Name="Color" Value="B">Red
+        <input type="Radio" Name="Color" Value="C">Blue
+        <input type="Radio" Name="Color" Value="D">Yellow
+        </pre>
+        </p>
+
+        <p>
+        <label>2. How would your friends describe you?</label>
+        <pre>
+        <input type="Radio" Name="Personality" Value="A">Brave
+        <input type="Radio" Name="Personality" Value="B">Aggressive
+        <input type="Radio" Name="Personality" Value="C">Weird
+        <input type="Radio" Name="Personality" Value="D">Cool
+        </pre>
+        </p>
+
+        <p>
+        <label>3. What is more enjoyable: being a child, teenager, or adult?</label>
+        <pre>
+        <input type="Radio" Name="age" Value="A">Adult
+        <input type="Radio" Name="age" Value="B">Teenager
+        <input type="Radio" Name="age" Value="C">Child
+        <input type="Radio" Name="age" Value="D">Elder
+        </pre>
+        </p>
+
+        <p>
+        <label>4. What is your favorite season of the year?</label>
+        <pre>
+        <input type="Radio" Name="season" Value="A">Spring
+        <input type="Radio" Name="season" Value="B">Summer
+        <input type="Radio" Name="season" Value="C">Fall
+        <input type="Radio" Name="season" Value="D">Winter
+        </pre>
+        </p>
+
+        <p>
+        <label>5. What makes you special?</label>
+        <pre>
+        <input type="Radio" Name="special" Value="A">Outgoing
+        <input type="Radio" Name="special" Value="B">Cuteness
+        <input type="Radio" Name="special" Value="C">Personable
+        <input type="Radio" Name="special" Value="D">ConfNameent
+        </pre>
+        </p>
+
+
+
+
+        <br></br><br></br>
+        <button class="button buttonsummon">Summon!</button>
+
+    </form>
 
     </body>
     </html>

@@ -11,7 +11,5 @@ def index():
     #return "Welcome Home"
     return render_template("home.html")
 
-@home_routes.route("/pokemon")
-def pokemon():
-    print("Pokemon...")
-    return render_template("pokemon.html")
+
+
