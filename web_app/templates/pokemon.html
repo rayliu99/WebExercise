@@ -17,7 +17,24 @@
     font-size: 26px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #075044;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+    }
+    img {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+
+    label {
+        font-family: cursive;
+        font-size: x-large;
+    }
+    body, input { 
+        font-family: cursive;
+        font-size: 21px; 
     }
     </style>
     </head>
@@ -25,61 +42,77 @@
 
     <title>What Type of Pokemon Are You?</title>
     </head>
-    <body>
 
-    <h1>What Type of Pokemon Are You?</h1>
+    <img ng-src="https://play.nintendo.com/images/PLAY-4354-PMDRTDX-PQ01_2x1_Q2_v01.0290fa98.jpg" ng-if="quiz.currentQuestion.image" alt="" class="ng-scope" width="600" height="300" src="https://play.nintendo.com/images/PLAY-4354-PMDRTDX-PQ01_2x1_Q2_v01.0290fa98.jpg">
+
+
+    <body style="background-color:rgb(244, 243, 210);">
 
     <form action="/summary" method="POST">
 
 
+        <br></br>
         <p>
         <label>1. What is your favorite color?</label>
-        <pre>
-        <input type="Radio" Name="Color" Value="A">Green
-        <input type="Radio" Name="Color" Value="B">Red
-        <input type="Radio" Name="Color" Value="C">Blue
-        <input type="Radio" Name="Color" Value="D">Yellow
-        </pre>
+        <br></br>
+        <br>
+        <input type="Radio" Name="Color" Value="A">Green&nbsp;&nbsp;
+        <input type="Radio" Name="Color" Value="B">Red&nbsp;&nbsp;
+        <input type="Radio" Name="Color" Value="C">Blue&nbsp;&nbsp;
+        <input type="Radio" Name="Color" Value="D">Yellow&nbsp;&nbsp;
+        </br>
         </p>
+
+        <br></br><br></br>
 
         <p>
         <label>2. How would your friends describe you?</label>
-        <pre>
-        <input type="Radio" Name="Personality" Value="A">Brave
-        <input type="Radio" Name="Personality" Value="B">Aggressive
-        <input type="Radio" Name="Personality" Value="C">Weird
-        <input type="Radio" Name="Personality" Value="D">Cool
-        </pre>
+        <br></br>
+        <br>
+        <input type="Radio" Name="Personality" Value="A">Brave&nbsp;&nbsp;
+        <input type="Radio" Name="Personality" Value="B">Aggressive&nbsp;&nbsp;
+        <input type="Radio" Name="Personality" Value="C">Weird&nbsp;&nbsp;
+        <input type="Radio" Name="Personality" Value="D">Cool&nbsp;&nbsp;
+        </br>
         </p>
+
+        <br></br><br></br>
 
         <p>
         <label>3. What is more enjoyable: being a child, teenager, or adult?</label>
-        <pre>
-        <input type="Radio" Name="age" Value="A">Adult
-        <input type="Radio" Name="age" Value="B">Teenager
-        <input type="Radio" Name="age" Value="C">Child
-        <input type="Radio" Name="age" Value="D">Elder
-        </pre>
+        <br></br>
+        <br>
+        <input type="Radio" Name="age" Value="A">Adult&nbsp;&nbsp;
+        <input type="Radio" Name="age" Value="B">Teenager&nbsp;&nbsp;
+        <input type="Radio" Name="age" Value="C">Child&nbsp;&nbsp;
+        <input type="Radio" Name="age" Value="D">Elder&nbsp;&nbsp;
+        </br>
         </p>
+
+        <br></br><br></br>
 
         <p>
         <label>4. What is your favorite season of the year?</label>
-        <pre>
-        <input type="Radio" Name="season" Value="A">Spring
-        <input type="Radio" Name="season" Value="B">Summer
-        <input type="Radio" Name="season" Value="C">Fall
-        <input type="Radio" Name="season" Value="D">Winter
-        </pre>
+        <br></br>
+        <br>
+        <input type="Radio" Name="season" Value="A">Spring&nbsp;&nbsp;
+        <input type="Radio" Name="season" Value="B">Summer&nbsp;&nbsp;
+        <input type="Radio" Name="season" Value="C">Fall&nbsp;&nbsp;
+        <input type="Radio" Name="season" Value="D">Winter&nbsp;&nbsp;
+        </br>
         </p>
+
+        <br></br><br></br>
 
         <p>
         <label>5. What makes you special?</label>
-        <pre>
-        <input type="Radio" Name="special" Value="A">Outgoing
-        <input type="Radio" Name="special" Value="B">Cuteness
-        <input type="Radio" Name="special" Value="C">Personable
-        <input type="Radio" Name="special" Value="D">ConfNameent
-        </pre>
+        <br></br>
+        <br>
+        <input type="Radio" Name="special" Value="A">Outgoing&nbsp;&nbsp;
+        <input type="Radio" Name="special" Value="B">Cuteness&nbsp;&nbsp;
+        <input type="Radio" Name="special" Value="C">Personable&nbsp;&nbsp;
+        <input type="Radio" Name="special" Value="D">Confident&nbsp;&nbsp;
+        </br>
         </p>
 
 
@@ -89,7 +122,7 @@
         <button class="button buttonsummon">Summon!</button>
 
     </form>
-
+    <br></br><br></br>
     </body>
     </html>
 

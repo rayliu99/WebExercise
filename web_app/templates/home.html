@@ -2,8 +2,42 @@
 
 {% block content %}
 
-    <h1>Welcome Home</h1>
+<style>
+    .p1 {
+    font-family: "Lucida Handwriting";
+    }
+    .p2 {
+  	font-family: Helvetica;
+	}	
+    
+    h1 {text-align: center;}
+    p {text-align: center;}
+    img {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
 
-    <p>This is a paragraph on the "home" page.</p>
+</style>
+
+
+<body>
+    <br></br>
+    <h1 class="p1" style="color:rgb(60, 173, 199)">Ever Wonder What's Your Pokémon Type?</h1>
+
+    <p class="p1" style="color:rgb(0, 142, 173)">Answer a quick survey to discover your unique Pokémon!</p>
+    
+    <br></br>
+    
+	<img ng-src="https://play.nintendo.com/images/PLAY-4354-PMDRTDX-PQ01_2x1_Q1_v01.0290fa98.jpg" ng-if="quiz.currentQuestion.image" alt="" class="ng-scope" src="https://play.nintendo.com/images/PLAY-4354-PMDRTDX-PQ01_2x1_Q1_v01.0290fa98.jpg">
+
+    <nav>
+        <ul>
+          <p class="p1" style="font-size:180%"><a href="/pokemon">Start!</a></p>
+        </ul>
+      </nav>
+      
+</body>
+
 
 {% endblock %}
