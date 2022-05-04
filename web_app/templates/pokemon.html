@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <!DOCTYPE html>
+    <html class="no-js" lang="en">
+    <head>
+    <style>
+    .buttonsummon {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #075044;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+    }
+    img {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+
+    label {
+        font-family: cursive;
+        font-size: x-large;
+    }
+    body, input { 
+        font-family: cursive;
+        font-size: 21px; 
+    }
+    </style>
+    </head>
+
+
+    <title>What Type of Pokemon Are You?</title>
+    </head>
+
+    <img ng-src="https://play.nintendo.com/images/PLAY-4354-PMDRTDX-PQ01_2x1_Q2_v01.0290fa98.jpg" ng-if="quiz.currentQuestion.image" alt="" class="ng-scope" width="600" height="300" src="https://play.nintendo.com/images/PLAY-4354-PMDRTDX-PQ01_2x1_Q2_v01.0290fa98.jpg">
+
+
+    <body style="background-color:rgb(244, 243, 210);">
+
+    <form action="/summary" method="POST">
+
+
+        <br></br>
+        <p>
+        <label>1. What is your favorite color?</label>
+        <br></br>
+        <br>
+        <input type="Radio" Name="Color" Value="A">Green&nbsp;&nbsp;
+        <input type="Radio" Name="Color" Value="B">Red&nbsp;&nbsp;
+        <input type="Radio" Name="Color" Value="C">Blue&nbsp;&nbsp;
+        <input type="Radio" Name="Color" Value="D">Yellow&nbsp;&nbsp;
+        </br>
+        </p>
+
+        <br></br><br></br>
+
+        <p>
+        <label>2. How would your friends describe you?</label>
+        <br></br>
+        <br>
+        <input type="Radio" Name="Personality" Value="A">Brave&nbsp;&nbsp;
+        <input type="Radio" Name="Personality" Value="B">Aggressive&nbsp;&nbsp;
+        <input type="Radio" Name="Personality" Value="C">Weird&nbsp;&nbsp;
+        <input type="Radio" Name="Personality" Value="D">Cool&nbsp;&nbsp;
+        </br>
+        </p>
+
+        <br></br><br></br>
+
+        <p>
+        <label>3. What is more enjoyable: being a child, teenager, or adult?</label>
+        <br></br>
+        <br>
+        <input type="Radio" Name="age" Value="A">Adult&nbsp;&nbsp;
+        <input type="Radio" Name="age" Value="B">Teenager&nbsp;&nbsp;
+        <input type="Radio" Name="age" Value="C">Child&nbsp;&nbsp;
+        <input type="Radio" Name="age" Value="D">Elder&nbsp;&nbsp;
+        </br>
+        </p>
+
+        <br></br><br></br>
+
+        <p>
+        <label>4. What is your favorite season of the year?</label>
+        <br></br>
+        <br>
+        <input type="Radio" Name="season" Value="A">Spring&nbsp;&nbsp;
+        <input type="Radio" Name="season" Value="B">Summer&nbsp;&nbsp;
+        <input type="Radio" Name="season" Value="C">Fall&nbsp;&nbsp;
+        <input type="Radio" Name="season" Value="D">Winter&nbsp;&nbsp;
+        </br>
+        </p>
+
+        <br></br><br></br>
+
+        <p>
+        <label>5. What makes you special?</label>
+        <br></br>
+        <br>
+        <input type="Radio" Name="special" Value="A">Outgoing&nbsp;&nbsp;
+        <input type="Radio" Name="special" Value="B">Cuteness&nbsp;&nbsp;
+        <input type="Radio" Name="special" Value="C">Personable&nbsp;&nbsp;
+        <input type="Radio" Name="special" Value="D">Confident&nbsp;&nbsp;
+        </br>
+        </p>
+
+
+
+
+        <br></br><br></br>
+        <button class="button buttonsummon">Summon!</button>
+
+    </form>
+    <br></br><br></br>
+    </body>
+    </html>
+
+
+
+{% endblock %}
