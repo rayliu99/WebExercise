@@ -24,7 +24,15 @@ pip install -r requirements.txt
 Create a new file called ".env" in the root directory of this repo, and paste the following contents inside, using your own values as appropriate:
 
 ## Web Application
+```
+# Mac OS:
 FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+export FLASK_APP=web_app
+flask run
+```
 
 
 ## Testing
